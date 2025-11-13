@@ -35,9 +35,52 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 
 ```
 
+# Reg.No: 212223060057
+# Name: DINESH KUMAR A
+
+class Bird:
+    def intro(self):
+        print("There are many types of birds.")
+    
+    def flight(self):
+        print("Most of the birds can fly but some cannot.")
+
+class Sparrow(Bird):
+    def flight(self):
+        print("Sparrows can fly.")
+
+class Ostrich(Bird):
+    def flight(self):
+        print("Ostriches cannot fly.")
+
+# Creating objects
+obj_bird = Bird()
+obj_spr = Sparrow()
+obj_ost = Ostrich()
+
+# Calling methods
+obj_bird.intro()
+obj_bird.flight()
+
+obj_spr.intro()
+obj_spr.flight()
+
+obj_ost.intro()
+obj_ost.flight()
+
 ```
 
 ### OUTPUT
+```
+There are many types of birds.
+Most of the birds can fly but some cannot.
+There are many types of birds.
+Sparrows can fly.
+There are many types of birds.
+Ostriches cannot fly.
 
+```
 
 ### RESULT
+Thus, the Python program to demonstrate Method Overriding using inheritance has been successfully executed.
+
