@@ -26,10 +26,40 @@ To write a Python program to create a `Counter` class that can increment the val
 ### PROGRAM
 
 ```
+# Reg.No: 212223060057
+# Name: DINESH KUMAR A
+
+class Counter:
+    def __init__(self):
+        self.current = 0
+
+    def increment(self):
+        self.current += 1
+
+    def value(self):
+        return self.current
+
+    def reset(self):
+        self.current = 0
+
+# Creating an object
+counter = Counter()
+
+# Incrementing the counter three times
+counter.increment()
+counter.increment()
+counter.increment()
+
+# Displaying the current counter value
+print("Current Counter Value:", counter.value())
 
 ```
 
 ### OUTPUT
+```
+Current Counter Value: 3
 
+```
 
 ### RESULT
+Thus, the Python program to create a Counter class that can increment and display the counter value has been successfully executed.
