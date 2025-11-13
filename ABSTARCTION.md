@@ -34,11 +34,55 @@ To write a Python program to define the abstract base class named `Polygon` and 
 ### PROGRAM
 
 ```
+# Reg.No: 212223060057
+# Name: DINESH KUMAR A
+
+from abc import ABC, abstractmethod
+
+class Polygon(ABC):
+    @abstractmethod
+    def sides(self):
+        pass
+
+class Triangle(Polygon):
+    def sides(self):
+        print("Triangle has 3 sides")
+
+class Pentagon(Polygon):
+    def sides(self):
+        print("Pentagon has 5 sides")
+
+class Hexagon(Polygon):
+    def sides(self):
+        print("Hexagon has 6 sides")
+
+class Square(Polygon):
+    def sides(self):
+        print("Square has 4 sides")
+
+# Creating objects
+t = Triangle()
+p = Pentagon()
+h = Hexagon()
+s = Square()
+
+# Calling methods
+t.sides()
+p.sides()
+h.sides()
+s.sides()
 
 
 ```
 
 ### OUTPUT
+```
+Triangle has 3 sides
+Pentagon has 5 sides
+Hexagon has 6 sides
+Square has 4 sides
 
+```
 
 ### RESULT
+Thus, the Python program to implement Abstraction using an abstract base class and its derived subclasses has been successfully executed.
