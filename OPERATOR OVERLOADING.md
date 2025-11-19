@@ -36,37 +36,23 @@ To write a Python program to perform division of two complex numbers using the b
 # Name: DINESH KUMAR A
 
 class Complex:
-    def __init__(self, real, imag):
-        self.real = real
-        self.imag = imag
+    def __init__(self,real,imag):
+        self.real=real
+        self.imag=imag
+    def __add__(self,other):
+        real_part=self.real*other.real
+        imag_part=self.imag*other.imag
+        return(real_part,imag_part)
+obj1=Complex(1, 2)
+obj2=Complex(2, 3)
+print(obj1+obj2)
 
-    # Operator Overloading for Division
-    def __truediv__(self, other):
-        real_part = self.real / other.real
-        imag_part = self.imag / other.imag
-        return Complex(real_part, imag_part)
-
-    # String Representation
-    def __repr__(self):
-        return f"{self.real:.1f} + {self.imag:.1f}i"
-
-# Creating objects
-Ob1 = Complex(10, 21)
-Ob2 = Complex(2, 3)
-
-# Performing division using overloaded operator
-result = Ob1 / Ob2
-
-# Displaying the result
-print("Result of Division:", result)
 
 ```
 
 ### OUTPUT
-```
-Result of Division: 5.0 + 7.0i
+<img width="447" height="241" alt="image" src="https://github.com/user-attachments/assets/5cee858c-0496-4b13-a203-f10ad860501f" />
 
-```
 
 
 ### RESULT
