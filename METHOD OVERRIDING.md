@@ -38,48 +38,31 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 # Reg.No: 212223060057
 # Name: DINESH KUMAR A
 
-class Bird:
-    def intro(self):
-        print("There are many types of birds.")
-    
-    def flight(self):
-        print("Most of the birds can fly but some cannot.")
-
-class Sparrow(Bird):
-    def flight(self):
-        print("Sparrows can fly.")
-
-class Ostrich(Bird):
-    def flight(self):
-        print("Ostriches cannot fly.")
-
-# Creating objects
-obj_bird = Bird()
-obj_spr = Sparrow()
-obj_ost = Ostrich()
-
-# Calling methods
-obj_bird.intro()
-obj_bird.flight()
-
-obj_spr.intro()
-obj_spr.flight()
-
-obj_ost.intro()
-obj_ost.flight()
-
+class India():
+	def capital(self):
+		print("New Delhi is the capital of India.")
+	def language(self):
+		print("Hindi is the most widely spoken language of India.")
+	def type(self):
+		print("India is a developing country.")
+class USA():
+	def capital(self):
+		print("Washington, D.C. is the capital of USA.")
+	def language(self):
+		print("English is the primary language of USA.")
+	def type(self):
+		print("USA is a developed country.")
+obj_ind = India()
+obj_usa = USA()
+for country in (obj_ind, obj_usa):
+    country.capital()
+    country.language()
+    country.type()
 ```
 
 ### OUTPUT
-```
-There are many types of birds.
-Most of the birds can fly but some cannot.
-There are many types of birds.
-Sparrows can fly.
-There are many types of birds.
-Ostriches cannot fly.
+<img width="1137" height="282" alt="image" src="https://github.com/user-attachments/assets/bd9ee197-55bb-49d3-b544-7aee7ff923ac" />
 
-```
 
 ### RESULT
 Thus, the Python program to demonstrate Method Overriding using inheritance has been successfully executed.
