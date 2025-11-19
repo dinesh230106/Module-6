@@ -39,50 +39,51 @@ To write a Python program to define the abstract base class named `Polygon` and 
 
 from abc import ABC, abstractmethod
 
+# Abstract base class
 class Polygon(ABC):
     @abstractmethod
     def sides(self):
         pass
 
+# Subclass Triangle
 class Triangle(Polygon):
     def sides(self):
         print("Triangle has 3 sides")
 
+# Subclass Square
+class Square(Polygon):
+    def sides(self):
+        print("I have 4 sides")
+
+# Subclass Pentagon
 class Pentagon(Polygon):
     def sides(self):
         print("Pentagon has 5 sides")
 
+# Subclass Hexagon
 class Hexagon(Polygon):
     def sides(self):
         print("Hexagon has 6 sides")
 
-class Square(Polygon):
-    def sides(self):
-        print("Square has 4 sides")
-
-# Creating objects
+# Creating objects and invoking the method
 t = Triangle()
-p = Pentagon()
-h = Hexagon()
-s = Square()
-
-# Calling methods
 t.sides()
-p.sides()
-h.sides()
+
+s = Square()
 s.sides()
+
+p = Pentagon()
+p.sides()
+
+h = Hexagon()
+h.sides()
 
 
 ```
 
 ### OUTPUT
-```
-Triangle has 3 sides
-Pentagon has 5 sides
-Hexagon has 6 sides
-Square has 4 sides
+<img width="459" height="191" alt="image" src="https://github.com/user-attachments/assets/ed60ff81-947a-4f37-a070-0b99306c6169" />
 
-```
 
 ### RESULT
 Thus, the Python program to implement Abstraction using an abstract base class and its derived subclasses has been successfully executed.
